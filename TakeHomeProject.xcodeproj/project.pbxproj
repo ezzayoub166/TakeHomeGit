@@ -14,6 +14,7 @@
 		439E7D782D207D5300F225DB /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439E7D772D207D5300F225DB /* SearchVC.swift */; };
 		439E7D7A2D207D8C00F225DB /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439E7D792D207D8C00F225DB /* FavoritesListVC.swift */; };
 		439E7D7C2D20822400F225DB /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439E7D7B2D20822400F225DB /* GFButton.swift */; };
+		439E7D7E2D20878200F225DB /* GFTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439E7D7D2D20878200F225DB /* GFTextFiled.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		439E7D772D207D5300F225DB /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		439E7D792D207D8C00F225DB /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
 		439E7D7B2D20822400F225DB /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
+		439E7D7D2D20878200F225DB /* GFTextFiled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextFiled.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				439E7D772D207D5300F225DB /* SearchVC.swift */,
 				439E7D792D207D8C00F225DB /* FavoritesListVC.swift */,
 				439E7D7B2D20822400F225DB /* GFButton.swift */,
+				439E7D7D2D20878200F225DB /* GFTextFiled.swift */,
 			);
 			path = TakeHomeProject;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				439E7D7E2D20878200F225DB /* GFTextFiled.swift in Sources */,
 				439E7D7A2D207D8C00F225DB /* FavoritesListVC.swift in Sources */,
 				439E7D7C2D20822400F225DB /* GFButton.swift in Sources */,
 				439E7D782D207D5300F225DB /* SearchVC.swift in Sources */,
