@@ -15,6 +15,11 @@
 		439E7D7A2D207D8C00F225DB /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439E7D792D207D8C00F225DB /* FavoritesListVC.swift */; };
 		439E7D7C2D20822400F225DB /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439E7D7B2D20822400F225DB /* GFButton.swift */; };
 		439E7D7E2D20878200F225DB /* GFTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439E7D7D2D20878200F225DB /* GFTextFiled.swift */; };
+		439E7D802D2166A100F225DB /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439E7D7F2D2166A100F225DB /* FollowerListVC.swift */; };
+		439E7D822D21F03400F225DB /* GFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439E7D812D21F03400F225DB /* GFTitleLabel.swift */; };
+		439E7D842D21F23900F225DB /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439E7D832D21F23900F225DB /* GFBodyLabel.swift */; };
+		439E7D862D21F30A00F225DB /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439E7D852D21F30A00F225DB /* GFAlertVC.swift */; };
+		439E7D882D21FAEA00F225DB /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439E7D872D21FAEA00F225DB /* UIViewController+Ex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		439E7D792D207D8C00F225DB /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
 		439E7D7B2D20822400F225DB /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		439E7D7D2D20878200F225DB /* GFTextFiled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextFiled.swift; sourceTree = "<group>"; };
+		439E7D7F2D2166A100F225DB /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
+		439E7D812D21F03400F225DB /* GFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTitleLabel.swift; sourceTree = "<group>"; };
+		439E7D832D21F23900F225DB /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
+		439E7D852D21F30A00F225DB /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
+		439E7D872D21FAEA00F225DB /* UIViewController+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +79,11 @@
 				439E7D792D207D8C00F225DB /* FavoritesListVC.swift */,
 				439E7D7B2D20822400F225DB /* GFButton.swift */,
 				439E7D7D2D20878200F225DB /* GFTextFiled.swift */,
+				439E7D7F2D2166A100F225DB /* FollowerListVC.swift */,
+				439E7D812D21F03400F225DB /* GFTitleLabel.swift */,
+				439E7D832D21F23900F225DB /* GFBodyLabel.swift */,
+				439E7D852D21F30A00F225DB /* GFAlertVC.swift */,
+				439E7D872D21FAEA00F225DB /* UIViewController+Ex.swift */,
 			);
 			path = TakeHomeProject;
 			sourceTree = "<group>";
@@ -145,8 +160,13 @@
 			files = (
 				439E7D7E2D20878200F225DB /* GFTextFiled.swift in Sources */,
 				439E7D7A2D207D8C00F225DB /* FavoritesListVC.swift in Sources */,
+				439E7D882D21FAEA00F225DB /* UIViewController+Ex.swift in Sources */,
 				439E7D7C2D20822400F225DB /* GFButton.swift in Sources */,
 				439E7D782D207D5300F225DB /* SearchVC.swift in Sources */,
+				439E7D862D21F30A00F225DB /* GFAlertVC.swift in Sources */,
+				439E7D842D21F23900F225DB /* GFBodyLabel.swift in Sources */,
+				439E7D822D21F03400F225DB /* GFTitleLabel.swift in Sources */,
+				439E7D802D2166A100F225DB /* FollowerListVC.swift in Sources */,
 				439E7D642D1E942B00F225DB /* AppDelegate.swift in Sources */,
 				439E7D662D1E942B00F225DB /* SceneDelegate.swift in Sources */,
 			);
