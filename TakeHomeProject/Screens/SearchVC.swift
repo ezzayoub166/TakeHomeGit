@@ -16,6 +16,7 @@ class SearchVC: UIViewController {
     var isUserNameEnterd : Bool {
         return !usernameTextFiled.text!.isEmpty
     }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
