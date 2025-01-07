@@ -52,15 +52,10 @@ class FollowerListVC: UIViewController {
     }
     
     
-<<<<<<< HEAD
-    func getFollowers(){
+
+    func getFollowers(username : String , page : Int){
         showLoadingView()
         NetworkManager.shared.getFollowers(for: userName!, page: 1) { [weak self] result in
-=======
-    func getFollowers(username : String , page : Int){
-        
-        NetworkManager.shared.getFollowers(for: userName!, page: page) { [weak self] result in
->>>>>>> Pagination-Next100Followers
             guard let self = self else {return}
             self.dismissLoadingView()
             switch result {
