@@ -11,12 +11,29 @@ class UserInfoVC: UIViewController {
     
     var username : String!
     
-    let headerView = UIView()
+    let headerView           = UIView()
+    let itemViewOne          = UIView()
+    let itemViewTow          = UIView()
+    
+    var itemViews : [UIView] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         configureViewController()
+        layoutUI()
+        getUserInfo()
+   
+ 
+    }
+    
+    func configureViewController(){
+        view.backgroundColor              = .systemBackground
+        let doneButton                    = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissVC))
+        navigationItem.rightBarButtonItem = doneButton
+    }
+    
+    
+    func getUserInfo(){
         NetworkManager.shared.getUserInfo(for: username) { [weak self] result in
             
             guard let self = self else {return}
@@ -31,27 +48,36 @@ class UserInfoVC: UIViewController {
                 print(error)
             }
         }
-        layoutUI()
     }
     
-    
-    func configureViewController(){
-        view.backgroundColor              = .systemBackground
-        let doneButton                    = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissVC))
-        navigationItem.rightBarButtonItem = doneButton
-        
-    }
     
     func layoutUI(){
-        view.addSubview(headerView)
-        headerView.translatesAutoresizingMaskIntoConstraints = false
+        let padding    : CGFloat    = 20
+        let itemHeight : CGFloat    = 140
+        
+ 
+        itemViews = [headerView , itemViewOne , itemViewTow]
+        for subView in itemViews {
+            view.addSubview(subView)
+            subView.translatesAutoresizingMaskIntoConstraints = false
+            NSLayoutConstraint.activate([
+                subView.leadingAnchor.constraint(equalTo: view.leadingAnchor , constant: padding),
+                subView.trailingAnchor.constraint(equalTo: view.trailingAnchor , constant: -padding),
+            ])
+        }
+        
+        itemViewOne.backgroundColor = .systemBlue
+        itemViewTow.backgroundColor = .systemPink
+                
         NSLayoutConstraint.activate([
             headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            headerView.heightAnchor.constraint(equalToConstant: 180)
+            headerView.heightAnchor.constraint(equalToConstant: 180),
             
-        
+            itemViewOne.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: padding),
+            itemViewOne.heightAnchor.constraint(equalToConstant: itemHeight),
+            
+            itemViewTow.topAnchor.constraint(equalTo: itemViewOne.bottomAnchor, constant: padding),
+            itemViewTow.heightAnchor.constraint(equalToConstant: itemHeight)
         
         ])
     }
